@@ -1,7 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+album = Album.create(name: "Chet Baker Sings", artist: "Chet Baker", label: "Pacific Jazz", release_date: "1954", image_url: "https://img.discogs.com/0q_xj68gTVDNMtPkpwKPZGscfgA=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2930625-1437056636-5751.jpeg.jpg")
+
+review = Review.new(content: "Lorem Ipsum", username: "corbinarnett", rating: 9.8, album_id: 1)
