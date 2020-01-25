@@ -6,6 +6,7 @@ class Api::V1::AlbumsController < ApplicationController
   end
 
   def create
+    # binding.pry
     @album = Album.new(album_params)
     if @album.save
       render json: @album

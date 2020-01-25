@@ -8,9 +8,9 @@ class Api::V1::ReviewsController < ApplicationController
   end
 
   def create
-    @review = @account.reviews.build(review_params)
+    @review = @album.reviews.build(review_params)
     if @review.save
-      render json: @review
+      render json: @album
     else
       render json:{error: "Error creating review"}, status: 400
     end
